@@ -45,10 +45,6 @@ for i in range(len(StructNums)):
     i += 1
     n += 1
 
-
-
-
-
 routes.save(filename = dest_filename)
 
 #open GT Viewer
@@ -57,7 +53,7 @@ pyautogui.doubleClick(GTVx, GTVy)
 print('Opening program...')
 sleep(30)
 
-###select I accept button
+#select I accept button
 GTV_A          = pyautogui.locateOnScreen('Accept.png')
 print(GTV_A)
 GTV_Ax, GTV_Ay = pyautogui.center(GTV_A)
@@ -71,3 +67,6 @@ GTV_Qx, GTV_Qy = pyautogui.center(GTV_Q)
 pyautogui.click(GTV_Qx, GTV_Qy)
 for a in range(1, 15[ 1]):
     pyautogui.press('down')
+
+
+
